@@ -1,8 +1,8 @@
 # Helpscout::Mailbox::Paths
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/helpscout/mailbox/paths`. To experiment with that code, run `bin/console` for an interactive prompt.
+[![Build status](https://badge.buildkite.com/f19b143ad6bbb2fce71a361da78e974be4737e14d578d21b5d.svg)](https://buildkite.com/jayco/helpscout-mailbox-paths)
 
-TODO: Delete this and the text above, and describe your gem
+Simple Gem for generating helpscout paths with params
 
 ## Installation
 
