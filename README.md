@@ -2,7 +2,7 @@
 
 [![Build status](https://badge.buildkite.com/f19b143ad6bbb2fce71a361da78e974be4737e14d578d21b5d.svg)](https://buildkite.com/jayco/helpscout-mailbox-paths)
 
-Simple Gem for generating helpscout paths with params
+Simple gem mixin for generating helpscout paths with params
 
 ## Installation
 
@@ -27,8 +27,20 @@ Or install it yourself as:
 ```ruby
 require 'helpscout/mailbox/paths'
 
-mailbox = Helpscout::Mailbox::Paths.generate_path(:v2_conversation, {conversation_id: 1089909636})
+class SomeClient
+    include Helpscout::Mailbox::Paths
+
+    def send(method, path)
+        # do some request stuffs...
+    end
+end
+
+client = SomeClient.new
+
+api = client.generate_path(:v2_conversation, {conversation_id: 1089909636})
 # => {:method=>"GET", :path=>"/v2/conversations/1089909636"}
+
+client.send(api[:method], api[:path])
 ```
 
 ## API Mapping

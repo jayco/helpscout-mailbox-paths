@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Jason Jacob']
   spec.email         = ['hipcog@gmail.com']
 
-  spec.summary       = 'Generates HelpScout V2 mailbox paths'
+  spec.summary       = 'Simple mixin for generating helpscout paths with params'
   spec.homepage      = 'https://github.com/jayco/helpscout-mailbox-paths.git'
   spec.license       = 'MIT'
 

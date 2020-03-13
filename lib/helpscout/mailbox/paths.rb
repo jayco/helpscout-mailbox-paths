@@ -6,6 +6,7 @@ module Helpscout
   module Mailbox
     module Paths
       class Error < StandardError; end
+
       PATH_MAP = {
         v2_conversations_create: ['POST', '/v2/conversations'].freeze,
         v2_conversations: ['GET', '/v2/conversations'].freeze,
@@ -135,7 +136,7 @@ module Helpscout
         v2_workflows_update: ['PATCH', '/v2/workflows/%{workflow_id}'].freeze
       }.freeze
 
-      def self.generate_path(path, values)
+      def generate_path(path, values)
         template = PATH_MAP[path]
         raise "path '#{path}' not found" if template.nil?
 
