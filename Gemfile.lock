@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    helpscout-mailbox-paths (0.1.0)
+    helpscout-mailbox-paths (1.0.0)
 
 GEM
   remote: https://rubygems.org/
