@@ -1,6 +1,6 @@
 # Helpscout::Mailbox::Paths
 
-[![Build status](https://badge.buildkite.com/f19b143ad6bbb2fce71a361da78e974be4737e14d578d21b5d.svg)](https://buildkite.com/jayco/helpscout-mailbox-paths)
+[![Build status](https://badge.buildkite.com/f19b143ad6bbb2fce71a361da78e974be4737e14d578d21b5d.svg)](https://buildkite.com/jayco/helpscout-mailbox-paths)[![Gem Version](https://badge.fury.io/rb/helpscout-mailbox-paths.svg)](https://badge.fury.io/rb/helpscout-mailbox-paths)
 
 Simple gem mixin for generating helpscout paths with params
 
